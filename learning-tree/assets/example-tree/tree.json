@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "tree_id": "git-basics",
+  "title": "Learn Git",
+  "goal": "Use Git confidently on solo and team projects",
+  "level": "beginner",
+  "hours_per_week": 4,
+  "config": {
+    "mode": "guided",
+    "resources": "with-alternatives",
+    "capstones": true,
+    "depth": "gears+skills"
+  },
+  "nodes": [
+    {"id": "git-basics:foundations", "type": "gear", "title": "Foundations", "parent": null, "requires": [], "est_hours": 16},
+    {"id": "git-basics:mental-model", "type": "skill", "title": "The mental model", "parent": "git-basics:foundations", "requires": [], "est_hours": 3, "file": "nodes/mental-model.md"},
+    {"id": "git-basics:commits-history", "type": "skill", "title": "Commits and history", "parent": "git-basics:foundations", "requires": ["git-basics:mental-model"], "est_hours": 4, "file": "nodes/commits-history.md"},
+    {"id": "git-basics:branching", "type": "skill", "title": "Branching and merging", "parent": "git-basics:foundations", "requires": ["git-basics:commits-history"], "est_hours": 5, "file": "nodes/branching.md"},
+    {"id": "git-basics:foundations-capstone", "type": "capstone", "title": "Capstone: version a small project", "parent": "git-basics:foundations", "requires": [], "est_hours": 4, "file": "nodes/foundations-capstone.md"},
+
+    {"id": "git-basics:collaboration", "type": "gear", "title": "Collaboration", "parent": null, "requires": ["git-basics:foundations"], "est_hours": 12},
+    {"id": "git-basics:workflows", "type": "gear", "title": "Team workflows", "parent": null, "requires": ["git-basics:collaboration"], "est_hours": 10},
+    {"id": "git-basics:power-tools", "type": "gear", "title": "Power tools and recovery", "parent": null, "requires": ["git-basics:foundations"], "est_hours": 10}
+  ]
+}

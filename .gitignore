@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+null
+todo.md
+overview.md
+*.skill
+
+*DS_Store*
